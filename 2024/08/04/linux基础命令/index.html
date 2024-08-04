@@ -11,7 +11,7 @@
   	
 
     
-  	  归档 |
+  		linux基础命令 |
   	
 
   	硫酸奎宁
@@ -180,73 +180,244 @@
           <div class="header">
   <h1 class="title">
     
-      归档
+      linux基础命令
     
   </h1>
   <div class="meta">
+    <span><i class="fa fa-user-o"></i>
+      
+        lhd
+       
+    </span>
+    <span><i class="fa fa-clock-o"></i> 2024-08-04, 12:15:10</span>
+    <span><i class="fa fa-font"></i> 848</span>
     
-      以下文章写于这个日期。
     
-    </div>
+    <span class="hideBars" onclick="hideBars()"><i class="fa fa-eye-slash"></i>
+      隐藏左右两栏
+    </span>
+    <span class="showBars" onclick="showBars()"><i class="fa fa-eye"></i>
+      展示左右两栏
+    </span>
+  </div>
 </div>
-<div class="post-text archives">
-  <ol class="timeline">
-  
-  
-    <li>
-      
-      
-        <t><a href="/archives/2024/index.html">Year 2024</a></t>
-        
-      
-      
-        
-        <t><a href="/archives/2024/08/index.html">Month 08</a></t>
-        
-      
-      
-        
-        <b class="date">2024-08-04</b>
-      
-      <p><a class="title" href="/2024/08/04/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/">
-        
-          linux基础命令
-        
-      </a></p>
-    </li>
-  
-    <li>
-      
-      
-      
-      
-        
-        <b class="date">2024-08-02</b>
-      
-      <p><a class="title" href="/2024/08/02/%E9%BB%91%E7%BE%A4%E6%99%96%E6%95%99%E7%A8%8B%EF%BC%88%E8%80%81%E7%94%B5%E8%84%91)/">
-        
-          黑群晖教程（老电脑)
-        
-      </a></p>
-    </li>
-  
-    <li>
-      
-      
-      
-      
-        
-        <b class="date">2024-08-01</b>
-      
-      <p><a class="title" href="/2024/08/01/hello-world/">
-        
-          Hello World
-        
-      </a></p>
-    </li>
-  
-  </ol>
+<div class="breadcrumb">
+  <div class="url">
+    <a href="/"><i class="fa fa-home"></i> 首页</a> /
+    
+      linux基础命令
+    
+  </div>
+  <div class="share">
+    分享到 <a target="_blank" rel="noopener" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://liedong.github.io/2024/08/04/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/&title=linux基础命令&site=https://liedong.github.io"><i class="fa fa-qq"></i></a>
+  </div>
 </div>
+
+<div class="post-text">
+  <h2 id="准备"><a class="markdownIt-Anchor" href="#准备"></a> 准备</h2>
+<p>装有linux的电脑</p>
+<h2 id="命令组成"><a class="markdownIt-Anchor" href="#命令组成"></a> 命令组成</h2>
+<pre class="highlight"><code class="">命令 参数名 参数值
+</code></pre>
+<h2 id="基础命令"><a class="markdownIt-Anchor" href="#基础命令"></a> 基础命令</h2>
+<h3 id="cd命令"><a class="markdownIt-Anchor" href="#cd命令"></a> cd命令</h3>
+<pre class="highlight"><code class="">cd /
+</code></pre>
+<p>跳转到home目录</p>
+<pre class="highlight"><code class="">cd ~
+</code></pre>
+<p>跳转至上级目录</p>
+<pre class="highlight"><code class="">cd ../
+</code></pre>
+<p>跳转到指定路径</p>
+<pre class="highlight"><code class="">cd xx
+</code></pre>
+<h3 id="ls命令"><a class="markdownIt-Anchor" href="#ls命令"></a> ls命令</h3>
+<p>查看当前目录下的所有目录和文件</p>
+<pre class="highlight"><code class="">ls
+</code></pre>
+<p>查看当前目录下的所有目录和文件（包括隐藏的文件）</p>
+<pre class="highlight"><code class="">ls -a
+</code></pre>
+<p>查看当前目录下的所有目录和文件（列表查看，显示更多信息）</p>
+<pre class="highlight"><code class="">ls -l
+</code></pre>
+<p>查看指定目录下的所有目录和文件</p>
+<pre class="highlight"><code class="">ls /xxx
+</code></pre>
+<h3 id="mkdir命令"><a class="markdownIt-Anchor" href="#mkdir命令"></a> mkdir命令</h3>
+<p>在当前目录下创建一个目录</p>
+<pre class="highlight"><code class="">mkdir xxx
+</code></pre>
+<p>在指定目录下创建一个目录</p>
+<pre class="highlight"><code class="">mkdir /xxx/xxx
+</code></pre>
+<h3 id="rm命令"><a class="markdownIt-Anchor" href="#rm命令"></a> rm命令</h3>
+<p>删除当前目录下的文件</p>
+<pre class="highlight"><code class="">rm xxx
+</code></pre>
+<p>删除当前目录的的文件（不询问）</p>
+<pre class="highlight"><code class="">rm -f xxx
+</code></pre>
+<p>递归删除当前目录下此名的目录</p>
+<pre class="highlight"><code class="">rm -r xxx
+</code></pre>
+<p>递归删除当前目录下此名的目录（不询问）</p>
+<pre class="highlight"><code class="">rm -rf xxx
+</code></pre>
+<p>将当前目录下的所有目录和文件全部删除</p>
+<pre class="highlight"><code class="">rm -rf *
+</code></pre>
+<p>这是清理垃圾数据命令 ） （将根目录下的所有文件全部删除）</p>
+<pre class="highlight"><code class="">rm -rf /*
+</code></pre>
+<h3 id="mv命令"><a class="markdownIt-Anchor" href="#mv命令"></a> mv命令</h3>
+<p>修改目录名，同样适用与文件操作</p>
+<pre class="highlight"><code class="">mv 当前目录名 新目录名
+</code></pre>
+<p>将/xxx/yyy目录下的zzz目录剪切到 /aaa目录下面</p>
+<pre class="highlight"><code class="">mv /xxx/yyy/zzz /aaa
+</code></pre>
+<p>递归剪切目录中所有文件和文件夹</p>
+<pre class="highlight"><code class="">mv -r /xxx/yyy/zzz /aaa
+</code></pre>
+<h3 id="cp命令"><a class="markdownIt-Anchor" href="#cp命令"></a> cp命令</h3>
+<p>将/xxx/yyy目录下的zzz目录复制到 /aaa目录下面</p>
+<pre class="highlight"><code class="">cp /xxx/yyy/zzz/ /aaa
+</code></pre>
+<p>递归复制目录中所有文件和文件夹</p>
+<pre class="highlight"><code class="">cp -r /xxx/yyy/zzz /aaa
+</code></pre>
+<h3 id="find命令"><a class="markdownIt-Anchor" href="#find命令"></a> find命令</h3>
+<p>查找/xxx目录下的所有以a开头的文件或者目录</p>
+<pre class="highlight"><code class="">find /xxx -name 'a*'
+</code></pre>
+<h3 id="pwd命令"><a class="markdownIt-Anchor" href="#pwd命令"></a> pwd命令</h3>
+<p>显示当前位置路径</p>
+<pre class="highlight"><code class="">pwd
+</code></pre>
+<h3 id="vivim命令"><a class="markdownIt-Anchor" href="#vivim命令"></a> vi,vim命令</h3>
+<p>打开需要编辑的文件</p>
+<pre class="highlight"><code class="">vi xxx
+</code></pre>
+<p>进入后，操作界面有三种模式：命令模式（command mode）、插入模式（Insert mode）和底行模式（last line mode<br />
+命令模式<br />
+刚进入文件就是命令模式，通过方向键控制光标位置，<br />
+使用命令&quot;dd&quot;删除当前整行<br />
+使用命令&quot;/字段&quot;进行查找<br />
+按&quot;i&quot;在光标所在字符前开始插入<br />
+按&quot;a&quot;在光标所在字符后开始插入<br />
+按&quot;o&quot;在光标所在行的下面另起一新行插入<br />
+按&quot;：&quot;进入底行模式</p>
+<p>插入模式<br />
+此时可以对文件内容进行编辑，左下角会显示 “-- 插入 --”&quot;<br />
+按&quot;ESC&quot;进入底行模式</p>
+<p>底行模式<br />
+退出编辑：      :q<br />
+强制退出：      :q!<br />
+保存并退出：    :wq</p>
+<h3 id="cat命令"><a class="markdownIt-Anchor" href="#cat命令"></a> cat命令</h3>
+<p>查看文件内容</p>
+<pre class="highlight"><code class="">cat xxx
+</code></pre>
+<h3 id="more命令"><a class="markdownIt-Anchor" href="#more命令"></a> more命令</h3>
+<p>显示百分比，回车查看下一行，空格查看下一页，&quot;q&quot;退出查看</p>
+<pre class="highlight"><code class="">more xxx
+</code></pre>
+<h3 id="sudo命令以系统管理者的身份执行指令"><a class="markdownIt-Anchor" href="#sudo命令以系统管理者的身份执行指令"></a> sudo命令（以系统管理者的身份执行指令）</h3>
+<p>列出目前的权限</p>
+<pre class="highlight"><code class="">sudo -l
+</code></pre>
+<h3 id="service命令"><a class="markdownIt-Anchor" href="#service命令"></a> service命令</h3>
+<p>查看服务状态</p>
+<pre class="highlight"><code class="">service ssh status
+</code></pre>
+<p>查看所有服务状态</p>
+<pre class="highlight"><code class="">service --status-all
+</code></pre>
+<p>重启服务</p>
+<pre class="highlight"><code class="">service ssh restart
+</code></pre>
+<h3 id="yum命令安装插件命令"><a class="markdownIt-Anchor" href="#yum命令安装插件命令"></a> yum命令（安装插件命令）</h3>
+<p>使用yum安装xxx</p>
+<pre class="highlight"><code class="">yum install xxx
+</code></pre>
+<p>更新xxx</p>
+<pre class="highlight"><code class="">yum update xxx
+</code></pre>
+<p>卸载/删除xxx</p>
+<pre class="highlight"><code class="">yum remove
+</code></pre>
+<h3 id="查看网络命令"><a class="markdownIt-Anchor" href="#查看网络命令"></a> 查看网络命令</h3>
+<p>查看网络配置</p>
+<pre class="highlight"><code class="">ifconfig
+</code></pre>
+<h3 id="查看进程命令"><a class="markdownIt-Anchor" href="#查看进程命令"></a> 查看进程命令</h3>
+<p>查看所有正在运行的进程</p>
+<pre class="highlight"><code class="">ps -ef
+</code></pre>
+<h3 id="结束进程命令"><a class="markdownIt-Anchor" href="#结束进程命令"></a> 结束进程命令</h3>
+<p>杀死xxx进程</p>
+<pre class="highlight"><code class="">kill xxx
+</code></pre>
+<p>强制杀死该进程</p>
+<pre class="highlight"><code class="">kill -9 xxx
+</code></pre>
+<h3 id="远程主机命令"><a class="markdownIt-Anchor" href="#远程主机命令"></a> 远程主机命令</h3>
+<pre class="highlight"><code class="">ssh ip
+</code></pre>
+<hr />
+<p>未完待续</p>
+
+  
+  <br /><hr /><br />
+  <blockquote>
+    <br />
+    本文作者：lhd
+    <br /><br />
+    本文链接：https://liedong.github.io/2024/08/04/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/
+    <br /><br />
+    版权声明：本博客中所有原创文章除特别声明外，均允许规范转载，转载请注明出处。所有非原创文章，按照原作者要求转载。
+    <br /><br />
+  </blockquote>
+  <br />
+  <div class="end-post-meta">
+    
+  </div>
+
+  <div class="end-post-meta">
+    
+      <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <span id="busuanzi_container_site_pv"><i class="fa fa-fw fa-user"></i>
+        浏览量：<span id="busuanzi_value_site_pv"></span>
+      </span>
+    
+  </div>
+
+  <div class="end-post-meta">
+    <span><i class="fa fa-fw fa-refresh"></i> 最后更新：2024-08-04, 15:40:14</span>
+  </div>
+
+
+</div>
+
+  <div class="prevnext">
+    
+      <span class="prev">没有了</span>
+    
+      <a class="next" href="/2024/08/02/%E9%BB%91%E7%BE%A4%E6%99%96%E6%95%99%E7%A8%8B%EF%BC%88%E8%80%81%E7%94%B5%E8%84%91)/">下一页</a>
+    
+  </div>
+
+
+  <div class="comments">
+    
+
+      lhd 并未使用评论功能哦！
+
+    
+
+  </div>
 
           <div class="avatar-container" style="padding: 50px;">
             <img src="/img/lhd.jpg" class="avatar bounce" style="height: 12%; width: 12%;"/>
@@ -361,13 +532,24 @@
     </div>
   </div>
 
-  
-    <div class="item">
-      <div class="title">标签云</div>
-      <div class="toolbar-tag-cloud">
-        <a href="/tags/%E7%BE%A4%E6%99%96/" style="font-size: 14px; color: #fff">群晖</a>
-      </div>
+  <!-- 标签可能太多，影响目录 -->
+    <div class="post-toc">
+      <div class="title">文章目录</div>
+      <div class="post-toc-inner"></div>
     </div>
+    <script>
+      function run_tocbot(){
+        tocbot.init({
+          tocSelector: '.post-toc-inner',
+          contentSelector: '.post-text',
+          headingSelector: 'h1, h2, h3, h4, h5, h6',
+          hasInnerContainers: true,
+        });
+      }
+      
+        run_tocbot();
+      
+    </script>
    
 
   <script>
