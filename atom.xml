@@ -6,7 +6,7 @@
   <link href="https://liedong.github.io/atom.xml" rel="self"/>
   
   <link href="https://liedong.github.io/"/>
-  <updated>2024-08-04T07:44:58.829Z</updated>
+  <updated>2024-08-05T13:00:14.234Z</updated>
   <id>https://liedong.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>windows10的安装</title>
+    <link href="https://liedong.github.io/2024/08/05/windows10%E7%9A%84%E5%AE%89%E8%A3%85/"/>
+    <id>https://liedong.github.io/2024/08/05/windows10%E7%9A%84%E5%AE%89%E8%A3%85/</id>
+    <published>2024-08-05T12:49:10.000Z</published>
+    <updated>2024-08-05T13:00:14.234Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="安装前准备"><a class="markdownIt-Anchor" href="#安装前准备"></a> 安装前准备</h2><ol><li>u盘（大于16GB）</li><li>windows10安装镜像</li><li>准备安装Windows的pc</li><li>运行windows的pc</li></ol><h2 id="软件准备"><a class="markdownIt-Anchor" href="#软件准备"></a> 软件准备</h2><ol><li>Rufus或者软碟通。<a href="http://rufus.ie/zh/">rufus官网</a> <a href="https://www.ultraiso.net">软碟通官网</a></li><li>windows10安装镜像 <a href="https://www.microsoft.com/zh-cn/software-download/windows10">微软官网下载</a><br />— 正式开始安装 —</li><li>将u盘格式化<br /><img src="/photo/%E6%A0%BC%E5%BC%8F%E5%8C%96.png" alt="格式化" /></li><li>将镜像写入u盘<br />选中镜像 <img src="/photo/%E5%86%99%E5%85%A5.png" alt="选中" /><br />点击写入</li><li>将u盘拔出</li><li>将u盘插入需要安装Windows电脑后面板USB接口</li><li>进入bios将u盘设为第一启动项<br />进入系统安装页面；下一步至选择页面<img src="/photo/%E8%87%AA%E5%AE%9A%E4%B9%89.png" alt="安装" /><br />选择自定义安装<br />将需要安装的硬盘格式化，下一步等待进度完成</li><li>拔掉u盘并重启电脑</li></ol><h2 id="完成"><a class="markdownIt-Anchor" href="#完成"></a> 完成</h2>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;安装前准备&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#安装前准备&quot;&gt;&lt;/a&gt; 安装前准备&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;u盘（大于16GB）&lt;/li&gt;
+&lt;li&gt;windows10安装镜像&lt;/li&gt;
+&lt;li&gt;准备安装Windows的pc</summary>
+      
+    
+    
+    
+    
+    <category term="windows" scheme="https://liedong.github.io/tags/windows/"/>
+    
+  </entry>
   
   <entry>
     <title>linux基础命令</title>
