@@ -391,12 +391,12 @@
 
 <script>
     if(!readData("color"))
-        $("html").addClass("color-white");
+        $("html").addClass("color-trans");
 
     if(!true)
         $(".toolbar").hide();
 
-    if(readData("color")==4 || "white"=="night"&&!readData("color")){
+    if(readData("color")==4 || "trans"=="night"&&!readData("color")){
         $("body").css("opacity","0.85");
         $("body").css("background-image","url(/img/night-bgp.jpg)");
         window.document.documentElement.setAttribute( "data-theme", "dark" );
