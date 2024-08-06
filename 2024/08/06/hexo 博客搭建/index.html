@@ -11,7 +11,7 @@
   	
 
     
-  	  归档 |
+  		hexo 博客搭建 |
   	
 
   	硫酸奎宁
@@ -180,103 +180,154 @@
           <div class="header">
   <h1 class="title">
     
-      归档
+      hexo 博客搭建
     
   </h1>
   <div class="meta">
+    <span><i class="fa fa-user-o"></i>
+      
+        lhd
+       
+    </span>
+    <span><i class="fa fa-clock-o"></i> 2024-08-06, 19:46:53</span>
+    <span><i class="fa fa-font"></i> 559</span>
     
-      以下文章写于这个日期。
     
-    </div>
+    <span class="hideBars" onclick="hideBars()"><i class="fa fa-eye-slash"></i>
+      隐藏左右两栏
+    </span>
+    <span class="showBars" onclick="showBars()"><i class="fa fa-eye"></i>
+      展示左右两栏
+    </span>
+  </div>
 </div>
-<div class="post-text archives">
-  <ol class="timeline">
-  
-  
-    <li>
-      
-      
-        <t><a href="/archives/2024/index.html">Year 2024</a></t>
-        
-      
-      
-        
-        <t><a href="/archives/2024/08/index.html">Month 08</a></t>
-        
-      
-      
-        
-        <b class="date">2024-08-06</b>
-      
-      <p><a class="title" href="/2024/08/06/hexo%20%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-        
-          hexo 博客搭建
-        
-      </a></p>
-    </li>
-  
-    <li>
-      
-      
-      
-      
-        
-        <b class="date">2024-08-05</b>
-      
-      <p><a class="title" href="/2024/08/05/windows10%E7%9A%84%E5%AE%89%E8%A3%85/">
-        
-          windows10的安装
-        
-      </a></p>
-    </li>
-  
-    <li>
-      
-      
-      
-      
-        
-        <b class="date">2024-08-04</b>
-      
-      <p><a class="title" href="/2024/08/04/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/">
-        
-          linux基础命令
-        
-      </a></p>
-    </li>
-  
-    <li>
-      
-      
-      
-      
-        
-        <b class="date">2024-08-02</b>
-      
-      <p><a class="title" href="/2024/08/02/%E9%BB%91%E7%BE%A4%E6%99%96%E6%95%99%E7%A8%8B%EF%BC%88%E8%80%81%E7%94%B5%E8%84%91)/">
-        
-          黑群晖教程（老电脑)
-        
-      </a></p>
-    </li>
-  
-    <li>
-      
-      
-      
-      
-        
-        <b class="date">2024-08-01</b>
-      
-      <p><a class="title" href="/2024/08/01/hello-world/">
-        
-          Hello World
-        
-      </a></p>
-    </li>
-  
-  </ol>
+<div class="breadcrumb">
+  <div class="url">
+    <a href="/"><i class="fa fa-home"></i> 首页</a> /
+    
+      hexo 博客搭建
+    
+  </div>
+  <div class="share">
+    分享到 <a target="_blank" rel="noopener" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://liedong.github.io/2024/08/06/hexo%20%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/&title=hexo 博客搭建&site=https://liedong.github.io"><i class="fa fa-qq"></i></a>
+  </div>
 </div>
+
+<div class="post-text">
+  <h2 id="1软件准备"><a class="markdownIt-Anchor" href="#1软件准备"></a> 1.软件准备</h2>
+<p>安装 git 和 Node.js</p>
+<p><a target="_blank" rel="noopener" href="https://gitforwindows.org/">git官网</a></p>
+<p><a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">node.js官网</a></p>
+<p>node 安装方式（Windows 环境）</p>
+<ol>
+<li>打开 node.js 官网</li>
+<li>将安装代码复制</li>
+<li>打开 powershell 将代码粘贴进去运行</li>
+</ol>
+<h2 id="2安装-hexo"><a class="markdownIt-Anchor" href="#2安装-hexo"></a> 2.安装 hexo</h2>
+<p>创建一个 blog 的文件夹用 git bash cd 到blog的文件夹内（或者在这个文件夹下直接右键 git bash 打开）</p>
+<p>安装 hexo</p>
+<pre class="highlight"><code class="">npm install -g hexo-cli
+</code></pre>
+<p>初始化 hexo</p>
+<pre class="highlight"><code class="">hexo init
+npm install
+</code></pre>
+<p>开启 hexo 服务</p>
+<pre class="highlight"><code class="">hexo g
+hexo server
+</code></pre>
+<p>在浏览器输入 localhost:4000 即可看到生成的博客Ctrl+C 即可关闭。</p>
+<h2 id="3将-blog-文件托管于-github"><a class="markdownIt-Anchor" href="#3将-blog-文件托管于-github"></a> 3.将 blog 文件托管于 github</h2>
+<p>注册 GitHub 账户 <a target="_blank" rel="noopener" href="https://github.com/">注册</a></p>
+<p>创建一个和你用户名相同的仓库，后面加 .github.io<br />
+<img src="/photo/%E4%BB%93%E5%BA%93.png" alt="ck" /><br />
+<img src="/photo/%E5%85%AC%E5%85%B1.png" alt="gg" /></p>
+<p>点击 create repository</p>
+<p>生成 SSH</p>
+<p>回到 git bash 中复制运行下列命令</p>
+<pre class="highlight"><code class="">git config --global user.name &quot;yourname&quot;
+git config --global user.email &quot;youremail&quot;
+</code></pre>
+<p>注意⚠️<br />
+这里的 yourname 输入你的 GitHub 用户名，youremail 输入你 GitHub 的邮箱。</p>
+<p>使用如下命令查看是否输入正确</p>
+<pre class="highlight"><code class="">git config user.name
+git config user.email
+</code></pre>
+<p>然后创建 SSH 出现卡顿按回车</p>
+<p>查找 .ssh文件夹中的公钥（id_rsa.pub)<br />
+注意⚠️<br />
+一般此文件在 c:\users\你的用户名.ssh</p>
+<p>将 id_rsa.pub 中的所有信息复制</p>
+<p>然后在 GitHub 的 setting 中，找到 SSH keys 的设置选项，点击 New SSH key 把你的 id_rsa.pub 里面的信息复制进去。<br />
+在 git bash 中使用如下命令查看是否成功</p>
+<pre class="highlight"><code class="">ssh -T git@github.com
+</code></pre>
+<p>这一步，我们就可以将 Hexo 和 GitHub 关联起来，也就是将 Hexo 生成的文章部署到 GitHub 上，打开站点配置文件 _config.yml，翻到最后，修改为 YourName 就是你的 GitHub 账户<br />
+使用如下命令安装 deploy-git，也就是部署的命令,这样你才能用命令部署到 GitHub。</p>
+<pre class="highlight"><code class="">npm install hexo-deployer-git --save
+</code></pre>
+<p>最后使用下列命令</p>
+<pre class="highlight"><code class="">hexo clean
+hexo generate
+hexo deploy
+</code></pre>
+<p>其中 hexo clean 清除了你之前生成的东西，也可以不加。 hexo generate 顾名思义，生成静态文章，可以用 hexo g 缩写；hexo deploy 部署文章，可以用 hexo d 缩写</p>
+<p>出现 INFO Deploy done: git 就说明部署成功了，过一会儿就可以在 <a target="_blank" rel="noopener" href="http://yourname.github.io">http://yourname.github.io</a> 这个网站看到你的博客了。</p>
+<h2 id="结束"><a class="markdownIt-Anchor" href="#结束"></a> 结束</h2>
+
+  
+  <br /><hr /><br />
+  <blockquote>
+    <br />
+    本文作者：lhd
+    <br /><br />
+    本文链接：https://liedong.github.io/2024/08/06/hexo%20%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/
+    <br /><br />
+    版权声明：本博客中所有原创文章除特别声明外，均允许规范转载，转载请注明出处。所有非原创文章，按照原作者要求转载。
+    <br /><br />
+  </blockquote>
+  <br />
+  <div class="end-post-meta">
+    
+		  <span><a href="/tags/hexo/index.html"><i class="fa fa-fw fa-tag"></i> hexo</a></span>
+	 
+  </div>
+
+  <div class="end-post-meta">
+    
+      <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <span id="busuanzi_container_site_pv"><i class="fa fa-fw fa-user"></i>
+        浏览量：<span id="busuanzi_value_site_pv"></span>
+      </span>
+    
+  </div>
+
+  <div class="end-post-meta">
+    <span><i class="fa fa-fw fa-refresh"></i> 最后更新：2024-08-06, 19:50:33</span>
+  </div>
+
+
+</div>
+
+  <div class="prevnext">
+    
+      <span class="prev">没有了</span>
+    
+      <a class="next" href="/2024/08/05/windows10%E7%9A%84%E5%AE%89%E8%A3%85/">下一页</a>
+    
+  </div>
+
+
+  <div class="comments">
+    
+
+      lhd 并未使用评论功能哦！
+
+    
+
+  </div>
 
           <div class="avatar-container" style="padding: 50px;">
             <img src="/img/lhd.jpg" class="avatar bounce" style="height: 12%; width: 12%;"/>
@@ -391,13 +442,24 @@
     </div>
   </div>
 
-  
-    <div class="item">
-      <div class="title">标签云</div>
-      <div class="toolbar-tag-cloud">
-        <a href="/tags/hexo/" style="font-size: 14px; color: #fff">hexo</a> <a href="/tags/linux/" style="font-size: 14px; color: #fff">linux</a> <a href="/tags/windows/" style="font-size: 14px; color: #fff">windows</a> <a href="/tags/%E7%BE%A4%E6%99%96/" style="font-size: 14px; color: #fff">群晖</a>
-      </div>
+  <!-- 标签可能太多，影响目录 -->
+    <div class="post-toc">
+      <div class="title">文章目录</div>
+      <div class="post-toc-inner"></div>
     </div>
+    <script>
+      function run_tocbot(){
+        tocbot.init({
+          tocSelector: '.post-toc-inner',
+          contentSelector: '.post-text',
+          headingSelector: 'h1, h2, h3, h4, h5, h6',
+          hasInnerContainers: true,
+        });
+      }
+      
+        run_tocbot();
+      
+    </script>
    
 
   <script>

@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>hexo 博客搭建</title>
+      <link href="/2024/08/06/hexo%20%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+      <url>/2024/08/06/hexo%20%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1软件准备"><a class="markdownIt-Anchor" href="#1软件准备"></a> 1.软件准备</h2><p>安装 git 和 Node.js</p><p><a href="https://gitforwindows.org/">git官网</a></p><p><a href="https://nodejs.org/en/download/">node.js官网</a></p><p>node 安装方式（Windows 环境）</p><ol><li>打开 node.js 官网</li><li>将安装代码复制</li><li>打开 powershell 将代码粘贴进去运行</li></ol><h2 id="2安装-hexo"><a class="markdownIt-Anchor" href="#2安装-hexo"></a> 2.安装 hexo</h2><p>创建一个 blog 的文件夹用 git bash cd 到blog的文件夹内（或者在这个文件夹下直接右键 git bash 打开）</p><p>安装 hexo</p><pre class="highlight"><code class="">npm install -g hexo-cli</code></pre><p>初始化 hexo</p><pre class="highlight"><code class="">hexo initnpm install</code></pre><p>开启 hexo 服务</p><pre class="highlight"><code class="">hexo ghexo server</code></pre><p>在浏览器输入 localhost:4000 即可看到生成的博客Ctrl+C 即可关闭。</p><h2 id="3将-blog-文件托管于-github"><a class="markdownIt-Anchor" href="#3将-blog-文件托管于-github"></a> 3.将 blog 文件托管于 github</h2><p>注册 GitHub 账户 <a href="https://github.com/">注册</a></p><p>创建一个和你用户名相同的仓库，后面加 .github.io<br /><img src="/photo/%E4%BB%93%E5%BA%93.png" alt="ck" /><br /><img src="/photo/%E5%85%AC%E5%85%B1.png" alt="gg" /></p><p>点击 create repository</p><p>生成 SSH</p><p>回到 git bash 中复制运行下列命令</p><pre class="highlight"><code class="">git config --global user.name &quot;yourname&quot;git config --global user.email &quot;youremail&quot;</code></pre><p>注意⚠️<br />这里的 yourname 输入你的 GitHub 用户名，youremail 输入你 GitHub 的邮箱。</p><p>使用如下命令查看是否输入正确</p><pre class="highlight"><code class="">git config user.namegit config user.email</code></pre><p>然后创建 SSH 出现卡顿按回车</p><p>查找 .ssh文件夹中的公钥（id_rsa.pub)<br />注意⚠️<br />一般此文件在 c:\users\你的用户名.ssh</p><p>将 id_rsa.pub 中的所有信息复制</p><p>然后在 GitHub 的 setting 中，找到 SSH keys 的设置选项，点击 New SSH key 把你的 id_rsa.pub 里面的信息复制进去。<br />在 git bash 中使用如下命令查看是否成功</p><pre class="highlight"><code class="">ssh -T git@github.com</code></pre><p>这一步，我们就可以将 Hexo 和 GitHub 关联起来，也就是将 Hexo 生成的文章部署到 GitHub 上，打开站点配置文件 _config.yml，翻到最后，修改为 YourName 就是你的 GitHub 账户<br />使用如下命令安装 deploy-git，也就是部署的命令,这样你才能用命令部署到 GitHub。</p><pre class="highlight"><code class="">npm install hexo-deployer-git --save</code></pre><p>最后使用下列命令</p><pre class="highlight"><code class="">hexo cleanhexo generatehexo deploy</code></pre><p>其中 hexo clean 清除了你之前生成的东西，也可以不加。 hexo generate 顾名思义，生成静态文章，可以用 hexo g 缩写；hexo deploy 部署文章，可以用 hexo d 缩写</p><p>出现 INFO Deploy done: git 就说明部署成功了，过一会儿就可以在 <a href="http://yourname.github.io">http://yourname.github.io</a> 这个网站看到你的博客了。</p><h2 id="结束"><a class="markdownIt-Anchor" href="#结束"></a> 结束</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>windows10的安装</title>
       <link href="/2024/08/05/windows10%E7%9A%84%E5%AE%89%E8%A3%85/"/>
       <url>/2024/08/05/windows10%E7%9A%84%E5%AE%89%E8%A3%85/</url>
